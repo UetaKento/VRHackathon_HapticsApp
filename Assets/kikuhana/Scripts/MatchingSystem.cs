@@ -2,20 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Oculus.Haptics;
+using Oculus.Interaction;
 
 
 public class MatchingSystem : MonoBehaviour
 {
     public GameObject[] gameObjects;
-    string[] TagNames;
-    bool triggerL;
-    bool triggerR;
     bool handtriggerL;
     bool handtriggerR;
     string hapticsNum1;
     string hapticsNum2;
     public Transform clearTransform;
     Vector3 clearPosition;
+
+    public int totalPairNum;
 
     public HapticClip clip1;
     private HapticClipPlayer player;
@@ -24,32 +24,11 @@ public class MatchingSystem : MonoBehaviour
     void Start()
     {
         player = new HapticClipPlayer(clip1);
-        triggerL = false;
-        triggerR = false;
         clearPosition = clearTransform.position;
     }
 
     private void FixedUpdate()
     {
-        if (OVRInput.GetDown(OVRInput.Button.PrimaryIndexTrigger))
-        {
-            //Debug.Log("Trigger:L");
-            triggerL = true;
-        }
-        if (OVRInput.GetUp(OVRInput.Button.PrimaryIndexTrigger))
-        {
-            triggerL = false;
-        }
-        if (OVRInput.GetDown(OVRInput.Button.SecondaryIndexTrigger))
-        {
-            //Debug.Log("Trigger;R");
-            triggerR = true;
-        }
-        if (OVRInput.GetUp(OVRInput.Button.SecondaryIndexTrigger))
-        {
-            triggerR = false;
-        }
-
         if (OVRInput.GetDown(OVRInput.Button.PrimaryHandTrigger))
         {
             Debug.Log("HandTrigger:L");
@@ -109,8 +88,25 @@ public class MatchingSystem : MonoBehaviour
         Debug.Log("Correct! :)");
         foreach (GameObject gameObject in gameObjects)
         {
-            //if(gameObject)
+            if(gameObject.tag == hapticsNum1)
+            {
+                gameObject.SetActive(false);
+                gameObject.transform.position = clearPosition;
+                gameObject.transform.rotation = Quaternion.identity;
+                gameObject.SetActive(true);
+                clearPosition += new Vector3(0.1f, 0.0f, 0.0f);
+            }
         }
+        totalPairNum -= 1;
+        if(totalPairNum == 0)
+        {
+            GameClear();
+        }
+    }
+
+    public void GameClear()
+    {
+        Debug.Log("ÅôGameClearÅô :)");
     }
 
     public void Failure()
