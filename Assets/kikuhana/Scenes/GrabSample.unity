@@ -123,67 +123,37 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1001 &98315578
-PrefabInstance:
+--- !u!1 &190255397
+GameObject:
   m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 2779395263829506802, guid: e80a616718e2b914ab74cf8b3db63b6b, type: 3}
-      propertyPath: m_Name
-      value: No.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2779395263829506802, guid: e80a616718e2b914ab74cf8b3db63b6b, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2779395263829506810, guid: e80a616718e2b914ab74cf8b3db63b6b, type: 3}
-      propertyPath: m_RootOrder
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2779395263829506810, guid: e80a616718e2b914ab74cf8b3db63b6b, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.56
-      objectReference: {fileID: 0}
-    - target: {fileID: 2779395263829506810, guid: e80a616718e2b914ab74cf8b3db63b6b, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.49
-      objectReference: {fileID: 0}
-    - target: {fileID: 2779395263829506810, guid: e80a616718e2b914ab74cf8b3db63b6b, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2779395263829506810, guid: e80a616718e2b914ab74cf8b3db63b6b, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2779395263829506810, guid: e80a616718e2b914ab74cf8b3db63b6b, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2779395263829506810, guid: e80a616718e2b914ab74cf8b3db63b6b, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2779395263829506810, guid: e80a616718e2b914ab74cf8b3db63b6b, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2779395263829506810, guid: e80a616718e2b914ab74cf8b3db63b6b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2779395263829506810, guid: e80a616718e2b914ab74cf8b3db63b6b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2779395263829506810, guid: e80a616718e2b914ab74cf8b3db63b6b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: e80a616718e2b914ab74cf8b3db63b6b, type: 3}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 190255398}
+  m_Layer: 0
+  m_Name: ClearPotision
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &190255398
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 190255397}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.5, y: 0.4, z: 0.4}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1507876269}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &359300813 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2779395263829506802, guid: e80a616718e2b914ab74cf8b3db63b6b, type: 3}
@@ -223,7 +193,19 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 1
           m_FloatArgument: 0
-          m_StringArgument: 1
+          m_StringArgument: No.1
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1507876268}
+        m_TargetAssemblyTypeName: MatchingSystem, Assembly-CSharp
+        m_MethodName: Haptics
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 2460798210113038985, guid: dde55e13c542f48c186587cca063eac8, type: 3}
+          m_ObjectArgumentAssemblyTypeName: Oculus.Haptics.HapticClip, Oculus.Haptics
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
   _whenUnselect:
@@ -307,7 +289,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 3
+          m_StringArgument: No.3
           m_BoolArgument: 0
         m_CallState: 2
   _whenUnselect:
@@ -483,67 +465,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 470200886}
   m_CullTransparentMesh: 1
---- !u!1001 &502311377
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 2779395263829506802, guid: e80a616718e2b914ab74cf8b3db63b6b, type: 3}
-      propertyPath: m_Name
-      value: No.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2779395263829506802, guid: e80a616718e2b914ab74cf8b3db63b6b, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2779395263829506810, guid: e80a616718e2b914ab74cf8b3db63b6b, type: 3}
-      propertyPath: m_RootOrder
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 2779395263829506810, guid: e80a616718e2b914ab74cf8b3db63b6b, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.815
-      objectReference: {fileID: 0}
-    - target: {fileID: 2779395263829506810, guid: e80a616718e2b914ab74cf8b3db63b6b, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.49
-      objectReference: {fileID: 0}
-    - target: {fileID: 2779395263829506810, guid: e80a616718e2b914ab74cf8b3db63b6b, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2779395263829506810, guid: e80a616718e2b914ab74cf8b3db63b6b, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2779395263829506810, guid: e80a616718e2b914ab74cf8b3db63b6b, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2779395263829506810, guid: e80a616718e2b914ab74cf8b3db63b6b, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2779395263829506810, guid: e80a616718e2b914ab74cf8b3db63b6b, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2779395263829506810, guid: e80a616718e2b914ab74cf8b3db63b6b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2779395263829506810, guid: e80a616718e2b914ab74cf8b3db63b6b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2779395263829506810, guid: e80a616718e2b914ab74cf8b3db63b6b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: e80a616718e2b914ab74cf8b3db63b6b, type: 3}
 --- !u!1 &525222373
 GameObject:
   m_ObjectHideFlags: 0
@@ -600,6 +521,10 @@ PrefabInstance:
     - target: {fileID: 2779395263829506802, guid: e80a616718e2b914ab74cf8b3db63b6b, type: 3}
       propertyPath: m_Name
       value: No.3-X
+      objectReference: {fileID: 0}
+    - target: {fileID: 2779395263829506802, guid: e80a616718e2b914ab74cf8b3db63b6b, type: 3}
+      propertyPath: m_TagString
+      value: No.3
       objectReference: {fileID: 0}
     - target: {fileID: 2779395263829506808, guid: e80a616718e2b914ab74cf8b3db63b6b, type: 3}
       propertyPath: m_Enabled
@@ -665,6 +590,10 @@ PrefabInstance:
     - target: {fileID: 2779395263829506802, guid: e80a616718e2b914ab74cf8b3db63b6b, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2779395263829506802, guid: e80a616718e2b914ab74cf8b3db63b6b, type: 3}
+      propertyPath: m_TagString
+      value: No.3
       objectReference: {fileID: 0}
     - target: {fileID: 2779395263829506808, guid: e80a616718e2b914ab74cf8b3db63b6b, type: 3}
       propertyPath: m_Enabled
@@ -932,6 +861,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: No.2-X
       objectReference: {fileID: 0}
+    - target: {fileID: 2779395263829506802, guid: e80a616718e2b914ab74cf8b3db63b6b, type: 3}
+      propertyPath: m_TagString
+      value: No.2
+      objectReference: {fileID: 0}
     - target: {fileID: 2779395263829506810, guid: e80a616718e2b914ab74cf8b3db63b6b, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -1069,6 +1002,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2779395263829506802, guid: e80a616718e2b914ab74cf8b3db63b6b, type: 3}
+      propertyPath: m_TagString
+      value: No.1
+      objectReference: {fileID: 0}
     - target: {fileID: 2779395263829506810, guid: e80a616718e2b914ab74cf8b3db63b6b, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -1170,7 +1107,19 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 1
+          m_StringArgument: No.1
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1507876268}
+        m_TargetAssemblyTypeName: MatchingSystem, Assembly-CSharp
+        m_MethodName: Haptics
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 2460798210113038985, guid: dde55e13c542f48c186587cca063eac8, type: 3}
+          m_ObjectArgumentAssemblyTypeName: Oculus.Haptics.HapticClip, Oculus.Haptics
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
   _whenUnselect:
@@ -1223,6 +1172,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c462530ecc748d44940fed79458e3cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameObjects: []
+  clearTransform: {fileID: 190255398}
+  clip1: {fileID: 2460798210113038985, guid: dde55e13c542f48c186587cca063eac8, type: 3}
 --- !u!4 &1507876269
 Transform:
   m_ObjectHideFlags: 0
@@ -1241,8 +1193,9 @@ Transform:
   - {fileID: 2010167122}
   - {fileID: 1646758142}
   - {fileID: 373738139}
+  - {fileID: 190255398}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1603641009
 GameObject:
@@ -1368,7 +1321,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 1
           m_FloatArgument: 0
-          m_StringArgument: 3
+          m_StringArgument: No.3
           m_BoolArgument: 0
         m_CallState: 2
   _whenUnselect:
@@ -1417,6 +1370,10 @@ PrefabInstance:
     - target: {fileID: 2779395263829506802, guid: e80a616718e2b914ab74cf8b3db63b6b, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2779395263829506802, guid: e80a616718e2b914ab74cf8b3db63b6b, type: 3}
+      propertyPath: m_TagString
+      value: No.2
       objectReference: {fileID: 0}
     - target: {fileID: 2779395263829506810, guid: e80a616718e2b914ab74cf8b3db63b6b, type: 3}
       propertyPath: m_RootOrder
@@ -1516,7 +1473,19 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 1
           m_FloatArgument: 0
-          m_StringArgument: 2
+          m_StringArgument: No.2
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1507876268}
+        m_TargetAssemblyTypeName: MatchingSystem, Assembly-CSharp
+        m_MethodName: Haptics
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 2460798210113038985, guid: f27777ffa361c48e3a383ad32c6c70a9, type: 3}
+          m_ObjectArgumentAssemblyTypeName: Oculus.Haptics.HapticClip, Oculus.Haptics
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
   _whenUnselect:
@@ -1595,7 +1564,19 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 2
+          m_StringArgument: No.2
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1507876268}
+        m_TargetAssemblyTypeName: MatchingSystem, Assembly-CSharp
+        m_MethodName: Haptics
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 2460798210113038985, guid: f27777ffa361c48e3a383ad32c6c70a9, type: 3}
+          m_ObjectArgumentAssemblyTypeName: Oculus.Haptics.HapticClip, Oculus.Haptics
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
   _whenUnselect:
@@ -1895,6 +1876,10 @@ PrefabInstance:
     - target: {fileID: 2779395263829506802, guid: e80a616718e2b914ab74cf8b3db63b6b, type: 3}
       propertyPath: m_Name
       value: No.1-X
+      objectReference: {fileID: 0}
+    - target: {fileID: 2779395263829506802, guid: e80a616718e2b914ab74cf8b3db63b6b, type: 3}
+      propertyPath: m_TagString
+      value: No.1
       objectReference: {fileID: 0}
     - target: {fileID: 2779395263829506810, guid: e80a616718e2b914ab74cf8b3db63b6b, type: 3}
       propertyPath: m_RootOrder
