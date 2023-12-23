@@ -152,7 +152,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6512765193619977733, guid: 3719909202138ab43b42e38264bbda81, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.461
+      value: -0.45
       objectReference: {fileID: 0}
     - target: {fileID: 6512765193619977733, guid: 3719909202138ab43b42e38264bbda81, type: 3}
       propertyPath: m_LocalPosition.z
@@ -193,6 +193,10 @@ PrefabInstance:
     - target: {fileID: 7798726810910966806, guid: 3719909202138ab43b42e38264bbda81, type: 3}
       propertyPath: m_Name
       value: RainUnderUmbrella_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7798726810910966806, guid: 3719909202138ab43b42e38264bbda81, type: 3}
+      propertyPath: m_TagString
+      value: No.3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3719909202138ab43b42e38264bbda81, type: 3}
@@ -590,7 +594,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6512765193619977733, guid: 3719909202138ab43b42e38264bbda81, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.461
+      value: -0.45
       objectReference: {fileID: 0}
     - target: {fileID: 6512765193619977733, guid: 3719909202138ab43b42e38264bbda81, type: 3}
       propertyPath: m_LocalPosition.z
@@ -631,6 +635,10 @@ PrefabInstance:
     - target: {fileID: 7798726810910966806, guid: 3719909202138ab43b42e38264bbda81, type: 3}
       propertyPath: m_Name
       value: Drill_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7798726810910966806, guid: 3719909202138ab43b42e38264bbda81, type: 3}
+      propertyPath: m_TagString
+      value: No.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3719909202138ab43b42e38264bbda81, type: 3}
@@ -892,7 +900,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6512765193619977733, guid: 3719909202138ab43b42e38264bbda81, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.461
+      value: -0.45
       objectReference: {fileID: 0}
     - target: {fileID: 6512765193619977733, guid: 3719909202138ab43b42e38264bbda81, type: 3}
       propertyPath: m_LocalPosition.z
@@ -933,6 +941,10 @@ PrefabInstance:
     - target: {fileID: 7798726810910966806, guid: 3719909202138ab43b42e38264bbda81, type: 3}
       propertyPath: m_Name
       value: CarEngine_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7798726810910966806, guid: 3719909202138ab43b42e38264bbda81, type: 3}
+      propertyPath: m_TagString
+      value: No.2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3719909202138ab43b42e38264bbda81, type: 3}
@@ -1292,7 +1304,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6512765193619977733, guid: 3719909202138ab43b42e38264bbda81, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.461
+      value: -0.45
       objectReference: {fileID: 0}
     - target: {fileID: 6512765193619977733, guid: 3719909202138ab43b42e38264bbda81, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1333,6 +1345,10 @@ PrefabInstance:
     - target: {fileID: 7798726810910966806, guid: 3719909202138ab43b42e38264bbda81, type: 3}
       propertyPath: m_Name
       value: CarEngine_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7798726810910966806, guid: 3719909202138ab43b42e38264bbda81, type: 3}
+      propertyPath: m_TagString
+      value: No.2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3719909202138ab43b42e38264bbda81, type: 3}
@@ -1529,7 +1545,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6512765193619977733, guid: 3719909202138ab43b42e38264bbda81, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.461
+      value: -0.45
       objectReference: {fileID: 0}
     - target: {fileID: 6512765193619977733, guid: 3719909202138ab43b42e38264bbda81, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1570,6 +1586,10 @@ PrefabInstance:
     - target: {fileID: 7798726810910966806, guid: 3719909202138ab43b42e38264bbda81, type: 3}
       propertyPath: m_Name
       value: GlassClink_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7798726810910966806, guid: 3719909202138ab43b42e38264bbda81, type: 3}
+      propertyPath: m_TagString
+      value: No.4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3719909202138ab43b42e38264bbda81, type: 3}
@@ -1766,7 +1786,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6512765193619977733, guid: 3719909202138ab43b42e38264bbda81, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.461
+      value: -0.45
       objectReference: {fileID: 0}
     - target: {fileID: 6512765193619977733, guid: 3719909202138ab43b42e38264bbda81, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1807,6 +1827,10 @@ PrefabInstance:
     - target: {fileID: 7798726810910966806, guid: 3719909202138ab43b42e38264bbda81, type: 3}
       propertyPath: m_Name
       value: Drill_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7798726810910966806, guid: 3719909202138ab43b42e38264bbda81, type: 3}
+      propertyPath: m_TagString
+      value: No.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3719909202138ab43b42e38264bbda81, type: 3}
@@ -1974,6 +1998,37 @@ MonoBehaviour:
   _whenCancel:
     m_PersistentCalls:
       m_Calls: []
+--- !u!1 &951674233
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 951674234}
+  m_Layer: 0
+  m_Name: ClearPotision
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &951674234
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 951674233}
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 0.4, y: 0, z: 0.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1044150898}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1001 &992390210
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2003,7 +2058,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6512765193619977733, guid: 3719909202138ab43b42e38264bbda81, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.461
+      value: -0.45
       objectReference: {fileID: 0}
     - target: {fileID: 6512765193619977733, guid: 3719909202138ab43b42e38264bbda81, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2044,6 +2099,10 @@ PrefabInstance:
     - target: {fileID: 7798726810910966806, guid: 3719909202138ab43b42e38264bbda81, type: 3}
       propertyPath: m_Name
       value: GlassClink_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7798726810910966806, guid: 3719909202138ab43b42e38264bbda81, type: 3}
+      propertyPath: m_TagString
+      value: No.4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3719909202138ab43b42e38264bbda81, type: 3}
@@ -2248,6 +2307,7 @@ Transform:
   - {fileID: 1966552617}
   - {fileID: 992390211}
   - {fileID: 853936845}
+  - {fileID: 951674234}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2263,10 +2323,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cc8e93ede9f1ad4db5da408a5da235a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameObjects: []
+  gameObjects:
+  - {fileID: 919787451}
+  - {fileID: 404646661}
+  - {fileID: 791880360}
+  - {fileID: 631766336}
+  - {fileID: 48497698}
+  - {fileID: 1966552618}
+  - {fileID: 992390212}
+  - {fileID: 853936846}
   clearTransform: {fileID: 190255398}
-  popUpText: {fileID: 1303744237}
+  totalPairNum: 4
   clip1: {fileID: 2460798210113038985, guid: dde55e13c542f48c186587cca063eac8, type: 3}
+  popUpText: {fileID: 1303744237}
 --- !u!1001 &1095478457
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3205,7 +3274,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6512765193619977733, guid: 3719909202138ab43b42e38264bbda81, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.461
+      value: -0.45
       objectReference: {fileID: 0}
     - target: {fileID: 6512765193619977733, guid: 3719909202138ab43b42e38264bbda81, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3246,6 +3315,10 @@ PrefabInstance:
     - target: {fileID: 7798726810910966806, guid: 3719909202138ab43b42e38264bbda81, type: 3}
       propertyPath: m_Name
       value: RainUnderUmbrella_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7798726810910966806, guid: 3719909202138ab43b42e38264bbda81, type: 3}
+      propertyPath: m_TagString
+      value: No.3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3719909202138ab43b42e38264bbda81, type: 3}
