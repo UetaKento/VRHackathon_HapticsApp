@@ -4,7 +4,10 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/kenty/HapticsSampleScene.unity
+    guid: 8c31231248444354a9c0cd91fad75175
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 72d1c15cf8cfa8946b227db4ae0ea68c, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: bb616288b8297a543bc6a197824ec006, type: 2}
