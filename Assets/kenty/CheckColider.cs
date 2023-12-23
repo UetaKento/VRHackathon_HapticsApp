@@ -20,28 +20,21 @@ public class CheckColider : MonoBehaviour
         
     }
 
-    public void PlayHapticClip1()
-    {
-        player.Play(Controller.Left);
-    }
-
-    public void StopHaptics()
-    {
-        player.Stop();
-    }
-
-    void OnDestroy()
-    {
-        // Free the HapticClipPlayer
-        player.Dispose();
-    }
 
     void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.name == "Cube")
         {
-            PlayHapticClip1();
-            //Destroy(collision.gameObject);
+            collision.gameObject.GetComponent<Renderer>().material.color = new Color(Random.value, Random.value, Random.value, 1.0f);
+        }
+    }
+
+    void OnTriggerEnter(Collider collision)
+    {
+        if (collision.gameObject.name == "Cube")
+        {
+            collision.gameObject.GetComponent<Renderer>().material.color = new Color(Random.value, Random.value, Random.value, 0.5f);
+            player.Play(Controller.Left);
         }
     }
 
