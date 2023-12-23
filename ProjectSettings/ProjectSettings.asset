@@ -137,8 +137,6 @@ PlayerSettings:
   bundleVersion: 0.1
   preloadedAssets:
   - {fileID: 11400000, guid: 712e7519ca7269d4f9f15374f3860390, type: 2}
-  - {fileID: 4717301320412515915, guid: bb616288b8297a543bc6a197824ec006, type: 2}
-  - {fileID: 11400000, guid: 72d1c15cf8cfa8946b227db4ae0ea68c, type: 2}
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1
@@ -157,7 +155,8 @@ PlayerSettings:
   resetResolutionOnWindowResize: 0
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
-  applicationIdentifier: {}
+  applicationIdentifier:
+    Android: com.DefaultCompany.VRHackathon_SoundHaptics
   buildNumber:
     Standalone: 0
     iPhone: 0
@@ -735,7 +734,7 @@ PlayerSettings:
   allowUnsafeCode: 0
   useDeterministicCompilation: 1
   enableRoslynAnalyzers: 1
-  selectedPlatform: 0
+  selectedPlatform: 2
   additionalIl2CppArgs: 
   scriptingRuntimeVersion: 1
   gcIncremental: 1
