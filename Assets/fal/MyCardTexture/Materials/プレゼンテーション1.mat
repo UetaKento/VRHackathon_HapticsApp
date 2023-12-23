@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Red_PlayingCards_Heart05_00
+  m_Name: "\u30D5\u309A\u30EC\u30BB\u3099\u30F3\u30C6\u30FC\u30B7\u30E7\u30F31"
   m_Shader: {fileID: 4800000, guid: 0d2e652d8e3898c4b8aa84417721d294, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
@@ -21,23 +21,18 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 6d202b7a67bce7b4ca9ab5f8bf9de3bf, type: 3}
+        m_Texture: {fileID: 2800000, guid: 33accec32607f4e43bfbdcc168abe84e, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex2:
-        m_Texture: {fileID: 2800000, guid: 814f02ad5072ba74cae9815572a3a646, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _NormalMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
     - _Cutoff: 0.5
-    - _Glossiness: 0.2
+    - _Glossiness: 0.5
     - _Metallic: 0
-    - _NormalMapIntensity: 1
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
