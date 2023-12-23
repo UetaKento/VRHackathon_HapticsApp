@@ -63,12 +63,18 @@ public class MatchingSystem : MonoBehaviour
         {
             player.Play(Controller.Left);
             handtriggerL = false;
+            //return;
         }
         if(handtriggerR)
         {
             player.Play(Controller.Right);
             handtriggerR = false;
         }
+    }
+
+    public void StopHaptics()
+    {
+        player.Stop();
     }
 
     public void Judgement()
@@ -86,6 +92,7 @@ public class MatchingSystem : MonoBehaviour
     public void Correct()
     {
         Debug.Log("Correct! :)");
+
         foreach (GameObject gameObject in gameObjects)
         {
             if(gameObject.tag == hapticsNum1)
@@ -97,6 +104,7 @@ public class MatchingSystem : MonoBehaviour
                 clearPosition += new Vector3(0.1f, 0.0f, 0.0f);
             }
         }
+
         totalPairNum -= 1;
         if(totalPairNum == 0)
         {
