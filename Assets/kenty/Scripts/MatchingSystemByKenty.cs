@@ -27,8 +27,6 @@ public class MatchingSystemByKenty : MonoBehaviour
     public AudioClip correct; //kenty
     public AudioClip failure; //kenty
     private AudioSource audioSource; //kenty
-    //private Material material; //kenty
-    //private Texture texture; //kenty
 
     // Start is called before the first frame update
     void Start()
@@ -116,7 +114,6 @@ public class MatchingSystemByKenty : MonoBehaviour
                 //texture = material.GetTexture(hapticsNum1); //kenty
                 //material.SetTexture("_MainTex", texture); //kenty
                 gameObject.transform.position = clearPosition;
-                //gameObject.transform.rotation = Quaternion.identity;
                 gameObject.transform.rotation = clearRotation; //kenty
                 gameObject.SetActive(true);
 
@@ -155,7 +152,7 @@ public class MatchingSystemByKenty : MonoBehaviour
 
     public void GameClear()
     {
-        Debug.Log("ÅôGameClearÅô :)");
+        Debug.Log("¬Å‚Ñ¢GameClear¬Å‚Ñ¢ :)");
     }
 
     public void Failure()
