@@ -119,7 +119,7 @@ public class MatchingSystemByKenty : MonoBehaviour
                 //gameObject.transform.rotation = Quaternion.identity;
                 gameObject.transform.rotation = clearRotation; //kenty
                 gameObject.SetActive(true);
-                clearPosition += new Vector3(0.5f, 0.0f, 0.0f);
+                clearPosition += new Vector3(0.2f, 0.0f, 0.0f);
             }
         }
 
