@@ -264,7 +264,7 @@ MonoBehaviour:
         m_MethodName: Haptics
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 2460798210113038985, guid: a58b8667f755a4e4c95309f4d7dec628, type: 3}
+          m_ObjectArgument: {fileID: 2460798210113038985, guid: ab674b57756b21846a45ea6c23dc789d, type: 3}
           m_ObjectArgumentAssemblyTypeName: Oculus.Haptics.HapticClip, Oculus.Haptics
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -654,7 +654,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6512765193619977733, guid: 3719909202138ab43b42e38264bbda81, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.5
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 6512765193619977733, guid: 3719909202138ab43b42e38264bbda81, type: 3}
       propertyPath: m_LocalPosition.y
@@ -662,7 +662,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6512765193619977733, guid: 3719909202138ab43b42e38264bbda81, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.65
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 6512765193619977733, guid: 3719909202138ab43b42e38264bbda81, type: 3}
       propertyPath: m_LocalRotation.w
@@ -770,7 +770,7 @@ MonoBehaviour:
         m_MethodName: Haptics
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 2460798210113038985, guid: 4f14695b44abcfb4da48a5803791289c, type: 3}
+          m_ObjectArgument: {fileID: 2460798210113038985, guid: ed84f26beba376b4da8f21410a31231d, type: 3}
           m_ObjectArgumentAssemblyTypeName: Oculus.Haptics.HapticClip, Oculus.Haptics
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -1009,7 +1009,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6512765193619977733, guid: 3719909202138ab43b42e38264bbda81, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.65
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 6512765193619977733, guid: 3719909202138ab43b42e38264bbda81, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1171,7 +1171,7 @@ MonoBehaviour:
         m_MethodName: Haptics
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 2460798210113038985, guid: 4f14695b44abcfb4da48a5803791289c, type: 3}
+          m_ObjectArgument: {fileID: 2460798210113038985, guid: ed84f26beba376b4da8f21410a31231d, type: 3}
           m_ObjectArgumentAssemblyTypeName: Oculus.Haptics.HapticClip, Oculus.Haptics
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -1254,7 +1254,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6512765193619977733, guid: 3719909202138ab43b42e38264bbda81, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.5
+      value: -0.5
       objectReference: {fileID: 0}
     - target: {fileID: 6512765193619977733, guid: 3719909202138ab43b42e38264bbda81, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1262,7 +1262,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6512765193619977733, guid: 3719909202138ab43b42e38264bbda81, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.3
+      value: 0.65
       objectReference: {fileID: 0}
     - target: {fileID: 6512765193619977733, guid: 3719909202138ab43b42e38264bbda81, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1515,7 +1515,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6512765193619977733, guid: 3719909202138ab43b42e38264bbda81, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.65
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 6512765193619977733, guid: 3719909202138ab43b42e38264bbda81, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1791,7 +1791,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6512765193619977733, guid: 3719909202138ab43b42e38264bbda81, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.2
+      value: -0.2
       objectReference: {fileID: 0}
     - target: {fileID: 6512765193619977733, guid: 3719909202138ab43b42e38264bbda81, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1799,7 +1799,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6512765193619977733, guid: 3719909202138ab43b42e38264bbda81, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.3
+      value: 0.65
       objectReference: {fileID: 0}
     - target: {fileID: 6512765193619977733, guid: 3719909202138ab43b42e38264bbda81, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2600,7 +2600,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6512765193619977733, guid: 3719909202138ab43b42e38264bbda81, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.2
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 6512765193619977733, guid: 3719909202138ab43b42e38264bbda81, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2608,7 +2608,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6512765193619977733, guid: 3719909202138ab43b42e38264bbda81, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.3
+      value: 0.65
       objectReference: {fileID: 0}
     - target: {fileID: 6512765193619977733, guid: 3719909202138ab43b42e38264bbda81, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2716,7 +2716,7 @@ MonoBehaviour:
         m_MethodName: Haptics
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 2460798210113038985, guid: a58b8667f755a4e4c95309f4d7dec628, type: 3}
+          m_ObjectArgument: {fileID: 2460798210113038985, guid: ab674b57756b21846a45ea6c23dc789d, type: 3}
           m_ObjectArgumentAssemblyTypeName: Oculus.Haptics.HapticClip, Oculus.Haptics
           m_IntArgument: 0
           m_FloatArgument: 0

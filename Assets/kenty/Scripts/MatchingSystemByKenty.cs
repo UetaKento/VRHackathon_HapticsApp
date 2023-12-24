@@ -136,7 +136,7 @@ public class MatchingSystemByKenty : MonoBehaviour
                         break;
                 }
 
-                clearPosition += new Vector3(0.1f, 0.0f, 0.0f);
+                clearPosition += new Vector3(0.2f, 0.0f, 0.0f);
             }
         }
 
