@@ -23,7 +23,7 @@ public class TitleManager : MonoBehaviour
     void Update()
     {
 
-        if (Input.GetKeyDown(KeyCode.Space))//ここをquestのAボタンに
+        if (OVRInput.GetDown(OVRInput.Button.Any))//ここをquestのAボタンに
         {
             isButtonShown = true;
             buttons.SetActive(true);
