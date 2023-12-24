@@ -11,19 +11,25 @@ public class TitleManager : MonoBehaviour
     [SerializeField] GameObject buttons;
     [SerializeField] GameObject ruleImage;
 
+    public Transform anchor;
+    private float maxDistance = 100;
+    private LineRenderer lineRenderer;
+
     AudioSource selectAudioSource;
 
     // Start is called before the first frame update
     void Start()
     {
         selectAudioSource = gameObject.GetComponent<AudioSource>();
+        lineRenderer = gameObject.GetComponent<LineRenderer>();
     }
 
     // Update is called once per frame
     void Update()
     {
+       
 
-        if (OVRInput.GetDown(OVRInput.Button.Any))//Ç±Ç±ÇquestÇÃAÉ{É^ÉìÇ…
+        if (OVRInput.GetDown(OVRInput.Button.Any)||Input.GetKeyDown(KeyCode.Space))//å„Ç≈èCê≥
         {
             isButtonShown = true;
             buttons.SetActive(true);
