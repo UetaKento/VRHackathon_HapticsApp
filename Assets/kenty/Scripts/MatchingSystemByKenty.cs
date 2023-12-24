@@ -23,7 +23,9 @@ public class MatchingSystemByKenty : MonoBehaviour
     private HapticClipPlayer player;
 
     public Text popUpText; //kenty
-
+    public AudioClip correct; //kenty
+    public AudioClip failure; //kenty
+    private AudioSource audioSource; //kenty
 
     // Start is called before the first frame update
     void Start()
@@ -31,6 +33,8 @@ public class MatchingSystemByKenty : MonoBehaviour
         player = new HapticClipPlayer(clip1);
         clearPosition = clearTransform.position;
         clearRotation = clearTransform.rotation; //kenty
+
+        audioSource = this.GetComponent<AudioSource>();
     }
 
     private void FixedUpdate()
@@ -99,6 +103,7 @@ public class MatchingSystemByKenty : MonoBehaviour
     {
         Debug.Log("Correct! :)");
         popUpText.text = "Correct! "; //kenty
+        audioSource.PlayOneShot(correct); //kenty
         foreach (GameObject gameObject in gameObjects)
         {
             if (gameObject.tag == hapticsNum1)
@@ -127,6 +132,7 @@ public class MatchingSystemByKenty : MonoBehaviour
     public void Failure()
     {
         Debug.Log("Failure... :(");
+        audioSource.PlayOneShot(failure); //kenty
         popUpText.text = "Failure..."; //kenty
     }
 
