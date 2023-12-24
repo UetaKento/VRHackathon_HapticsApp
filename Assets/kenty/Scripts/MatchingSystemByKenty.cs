@@ -110,6 +110,9 @@ public class MatchingSystemByKenty : MonoBehaviour
             if (gameObject.tag == hapticsNum1)
             {
                 gameObject.SetActive(false);
+                //material = gameObject.GetComponent<MeshRenderer>().material; //kenty
+                //texture = material.GetTexture(hapticsNum1); //kenty
+                //material.SetTexture("_MainTex", texture); //kenty
                 gameObject.transform.position = clearPosition;
                 gameObject.transform.rotation = clearRotation; //kenty
                 gameObject.SetActive(true);
@@ -149,7 +152,7 @@ public class MatchingSystemByKenty : MonoBehaviour
 
     public void GameClear()
     {
-        Debug.Log("ÅôGameClearÅô :)");
+        Debug.Log("¬Å‚Ñ¢GameClear¬Å‚Ñ¢ :)");
     }
 
     public void Failure()
