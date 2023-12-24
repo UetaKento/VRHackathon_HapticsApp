@@ -25,7 +25,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex2:
-        m_Texture: {fileID: 2800000, guid: 814f02ad5072ba74cae9815572a3a646, type: 3}
+        m_Texture: {fileID: 2800000, guid: 5b07d9a0e298a504f87cf51ba27f9620, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _NormalMap:
@@ -35,7 +35,7 @@ Material:
     m_Ints: []
     m_Floats:
     - _Cutoff: 0.5
-    - _Glossiness: 0.2
+    - _Glossiness: 1
     - _Metallic: 0
     - _NormalMapIntensity: 1
     m_Colors:
