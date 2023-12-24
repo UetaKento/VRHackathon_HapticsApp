@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/kenty/Scenes/UITest_BaseLain.unity
+    guid: 85d26c63a8e597448a002f4ac00da9aa
+  - enabled: 1
     path: Assets/kenty/Scenes/HouseSampleGrabSample.unity
     guid: 16eb33091da7e6f4aad0ceb6e57ebc33
   m_configObjects:
