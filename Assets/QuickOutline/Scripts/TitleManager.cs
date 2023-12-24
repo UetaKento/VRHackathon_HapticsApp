@@ -13,7 +13,7 @@ public class TitleManager : MonoBehaviour
 
     public Transform anchor;
     private float maxDistance = 100;
-    private LineRenderer lineRenderer;
+    //private LineRenderer lineRenderer;
 
     AudioSource selectAudioSource;
 
@@ -21,7 +21,7 @@ public class TitleManager : MonoBehaviour
     void Start()
     {
         selectAudioSource = gameObject.GetComponent<AudioSource>();
-        lineRenderer = gameObject.GetComponent<LineRenderer>();
+        //lineRenderer = gameObject.GetComponent<LineRenderer>();
     }
 
     // Update is called once per frame
@@ -41,7 +41,7 @@ public class TitleManager : MonoBehaviour
             toStartObj.SetActive(false);
         }
 
-        if(isRuleShown&& Input.GetKeyDown(KeyCode.Escape))
+        if(isRuleShown&& OVRInput.GetDown(OVRInput.Button.Any))
         {
             CloseRuleImage();
         }
