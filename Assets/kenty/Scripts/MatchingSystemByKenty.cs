@@ -2,57 +2,43 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Oculus.Haptics;
+using Oculus.Interaction;
 using UnityEngine.UI; //kenty
 
 
 public class MatchingSystemByKenty : MonoBehaviour
 {
     public GameObject[] gameObjects;
-    string[] TagNames;
-    bool triggerL;
-    bool triggerR;
     bool handtriggerL;
     bool handtriggerR;
     string hapticsNum1;
     string hapticsNum2;
     public Transform clearTransform;
     Vector3 clearPosition;
-    public Text popUpText; //kenty
+    Quaternion clearRotation; //kenty
+
+    public int totalPairNum;
 
     public HapticClip clip1;
     private HapticClipPlayer player;
+
+    public Text popUpText; //kenty
+    public AudioClip correct; //kenty
+    public AudioClip failure; //kenty
+    private AudioSource audioSource; //kenty
 
     // Start is called before the first frame update
     void Start()
     {
         player = new HapticClipPlayer(clip1);
-        triggerL = false;
-        triggerR = false;
         clearPosition = clearTransform.position;
-        popUpText.text = ""; //kenty
+        clearRotation = clearTransform.rotation; //kenty
+
+        audioSource = this.GetComponent<AudioSource>();
     }
 
     private void FixedUpdate()
     {
-        if (OVRInput.GetDown(OVRInput.Button.PrimaryIndexTrigger))
-        {
-            //Debug.Log("Trigger:L");
-            triggerL = true;
-        }
-        if (OVRInput.GetUp(OVRInput.Button.PrimaryIndexTrigger))
-        {
-            triggerL = false;
-        }
-        if (OVRInput.GetDown(OVRInput.Button.SecondaryIndexTrigger))
-        {
-            //Debug.Log("Trigger;R");
-            triggerR = true;
-        }
-        if (OVRInput.GetUp(OVRInput.Button.SecondaryIndexTrigger))
-        {
-            triggerR = false;
-        }
-
         if (OVRInput.GetDown(OVRInput.Button.PrimaryHandTrigger))
         {
             Debug.Log("HandTrigger:L");
@@ -65,7 +51,7 @@ public class MatchingSystemByKenty : MonoBehaviour
         }
 
 
-        if ((OVRInput.Get(OVRInput.Button.PrimaryIndexTrigger) && OVRInput.GetDown(OVRInput.Button.SecondaryIndexTrigger)) 
+        if ((OVRInput.Get(OVRInput.Button.PrimaryIndexTrigger) && OVRInput.GetDown(OVRInput.Button.SecondaryIndexTrigger))
                 || (OVRInput.GetDown(OVRInput.Button.PrimaryIndexTrigger) && OVRInput.Get(OVRInput.Button.SecondaryIndexTrigger)))
         {
             Judgement();
@@ -83,16 +69,22 @@ public class MatchingSystemByKenty : MonoBehaviour
     {
         player.clip = hapticClip;
         //player.Play(Controller.Left);
-        if(handtriggerL)
+        if (handtriggerL)
         {
             player.Play(Controller.Left);
             handtriggerL = false;
+            //return;
         }
-        if(handtriggerR)
+        if (handtriggerR)
         {
             player.Play(Controller.Right);
             handtriggerR = false;
         }
+    }
+
+    public void StopHaptics()
+    {
+        player.Stop();
     }
 
     public void Judgement()
@@ -111,26 +103,47 @@ public class MatchingSystemByKenty : MonoBehaviour
     {
         Debug.Log("Correct! :)");
         popUpText.text = "Correct! "; //kenty
+        audioSource.PlayOneShot(correct); //kenty
         foreach (GameObject gameObject in gameObjects)
         {
-            //if(gameObject)
+            if (gameObject.tag == hapticsNum1)
+            {
+                gameObject.SetActive(false);
+                gameObject.transform.position = clearPosition;
+                //gameObject.transform.rotation = Quaternion.identity;
+                gameObject.transform.rotation = clearRotation; //kenty
+                gameObject.SetActive(true);
+                clearPosition += new Vector3(0.1f, 0.0f, 0.0f);
+            }
         }
+
+        totalPairNum -= 1;
+        if (totalPairNum == 0)
+        {
+            GameClear();
+        }
+    }
+
+    public void GameClear()
+    {
+        Debug.Log("ÅôGameClearÅô :)");
     }
 
     public void Failure()
     {
         Debug.Log("Failure... :(");
+        audioSource.PlayOneShot(failure); //kenty
         popUpText.text = "Failure..."; //kenty
     }
 
     public void Select(string numOfHuptics)
     {
         Debug.Log("SERECT");
-        
+
 
         if (hapticsNum1 != null)
-        { 
-            hapticsNum2 = numOfHuptics; 
+        {
+            hapticsNum2 = numOfHuptics;
         }
         else
         {
