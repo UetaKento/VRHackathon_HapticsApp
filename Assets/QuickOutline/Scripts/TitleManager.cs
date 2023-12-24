@@ -46,7 +46,7 @@ public class TitleManager : MonoBehaviour
     public void StartGame()
     {
         selectAudioSource.Play();
-        SceneManager.LoadScene("HapticsTest");
+        SceneManager.LoadScene("HouseSampleGrabSample");
     }
 
     public void ShowRule()
