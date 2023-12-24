@@ -52,7 +52,7 @@ public class TitleManager : MonoBehaviour
     public void StartGame()
     {
         selectAudioSource.Play();
-        SceneManager.LoadScene("mainScene");
+        SceneManager.LoadScene("MainScene");
     }
 
     public void ShowRule()
