@@ -9,6 +9,7 @@ using UnityEngine.UI; //kenty
 public class MatchingSystemByKenty : MonoBehaviour
 {
     public GameObject[] gameObjects;
+    public Material[] materials;
     bool handtriggerL;
     bool handtriggerR;
     string hapticsNum1;
@@ -26,8 +27,6 @@ public class MatchingSystemByKenty : MonoBehaviour
     public AudioClip correct; //kenty
     public AudioClip failure; //kenty
     private AudioSource audioSource; //kenty
-    //private Material material; //kenty
-    //private Texture texture; //kenty
 
     // Start is called before the first frame update
     void Start()
@@ -111,15 +110,33 @@ public class MatchingSystemByKenty : MonoBehaviour
             if (gameObject.tag == hapticsNum1)
             {
                 gameObject.SetActive(false);
-                //material = gameObject.GetComponent<MeshRenderer>().material; //kenty
-                //texture = material.GetTexture(hapticsNum1); //kenty
-                //material.SetTexture("_MainTex", texture); //kenty
-
                 gameObject.transform.position = clearPosition;
-                //gameObject.transform.rotation = Quaternion.identity;
                 gameObject.transform.rotation = clearRotation; //kenty
                 gameObject.SetActive(true);
-                clearPosition += new Vector3(0.2f, 0.0f, 0.0f);
+
+                //kikuhana
+                //Material material = gameObject.GetComponent<MeshRenderer>().material;
+                switch (gameObject.tag)
+                {
+                    case "No.1":
+                        gameObject.GetComponent<MeshRenderer>().material = materials[0];
+                        break;
+                    case "No.2":
+                        gameObject.GetComponent<MeshRenderer>().material = materials[1];
+                        break;
+                    case "No.3":
+                        gameObject.GetComponent<MeshRenderer>().material = materials[2];
+                        break;
+                    case "No.4":
+                        gameObject.GetComponent<MeshRenderer>().material = materials[3];
+                        Debug.Log("Material Change");
+                        break;
+
+                    default:
+                        break;
+                }
+
+                clearPosition += new Vector3(0.1f, 0.0f, 0.0f);
             }
         }
 
