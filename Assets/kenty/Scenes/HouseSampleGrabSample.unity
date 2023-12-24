@@ -264,7 +264,7 @@ MonoBehaviour:
         m_MethodName: Haptics
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 2460798210113038985, guid: b266be8b206ead646ad977d5cff9e4ce, type: 3}
+          m_ObjectArgument: {fileID: 2460798210113038985, guid: a58b8667f755a4e4c95309f4d7dec628, type: 3}
           m_ObjectArgumentAssemblyTypeName: Oculus.Haptics.HapticClip, Oculus.Haptics
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -3569,7 +3569,7 @@ MonoBehaviour:
         m_MethodName: Haptics
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 2460798210113038985, guid: b266be8b206ead646ad977d5cff9e4ce, type: 3}
+          m_ObjectArgument: {fileID: 2460798210113038985, guid: a58b8667f755a4e4c95309f4d7dec628, type: 3}
           m_ObjectArgumentAssemblyTypeName: Oculus.Haptics.HapticClip, Oculus.Haptics
           m_IntArgument: 0
           m_FloatArgument: 0
