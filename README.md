@@ -1,7 +1,7 @@
 # 触覚神経衰弱
 
 
-https://github.com/UetaKento/VRHackathon_HapticsApp/assets/69253001/48b49d55-eef9-4b70-aff3-83b1de6f8e20
+https://github.com/UetaKento/VRHackathon_HapticsApp/assets/69253001/86ad4927-0ced-4613-adce-2070641841fd
 
 
 ## 遊び方
