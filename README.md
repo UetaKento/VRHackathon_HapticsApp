@@ -15,6 +15,9 @@ https://github.com/UetaKento/VRHackathon_HapticsApp/assets/69253001/48b49d55-eef
 - トランプを掴んだのに振動が再生されないときは、トランプの真ん中あたりを掴みなおしてみて下さい。
 - 明らかに正解なのに不正解になる場合は、振動が完全に止まってから人差し指トリガーを引いたり、何度かトランプを掴みなおしてみて下さい。
 ## メンバー
-[Kenty](https://twitter.com/KenTy_103) / [Kikuhana](https://twitter.com/the_new_kikka) / [Lain](https://twitter.com/lain_xr) / [Fal](https://twitter.com/FalBuilds)
+- [Fal](https://twitter.com/FalBuilds)
+- [Kenty](https://twitter.com/KenTy_103)
+- [Kikuhana](https://twitter.com/the_new_kikka)
+- [Lain](https://twitter.com/lain_xr)
 
 
