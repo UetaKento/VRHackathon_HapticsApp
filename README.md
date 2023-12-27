@@ -1,1 +1,1 @@
-# VRHackathon_HapticsApp
+# 触覚神経衰弱
